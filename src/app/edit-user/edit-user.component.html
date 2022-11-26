@@ -1,0 +1,486 @@
+<section style="background-color: #eee;">
+    <div class="container py-2">
+        <form #udateUserform="ngForm">
+            <h5 style="text-align: center;">Edit User Form</h5>
+            <div class="row">
+                <div class="col-lg-4">
+                    <!---Web details-->
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">ID Number </p>
+                                </div>
+                                <div class="col-sm-9">
+                                    <input [(ngModel)]="userDetails.id" name="idNumber" type="text" class="form-control"
+                                        placeholder="ID Number">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">Image URL </p>
+                                </div>
+                                <div class="col-sm-9">
+                                    <input [(ngModel)]="userDetails.image" name="imageUrl" type="text"
+                                        class="form-control" placeholder="Image URL">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">Domain</p>
+                                </div>
+                                <div class="col-sm-9">
+                                    <input [(ngModel)]="userDetails.domain" name="website" type="url"
+                                        class="form-control" placeholder="Website">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">User Name</p>
+                                </div>
+                                <div class="col-sm-9">
+                                    <input [(ngModel)]="userDetails.username" name="username" type="text"
+                                        class="form-control" placeholder="Username">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">Password</p>
+                                </div>
+                                <div class="col-sm-9">
+                                    <input [(ngModel)]="userDetails.password" name="Password" type="text"
+                                        class="form-control" placeholder="Password">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">IP Address</p>
+                                </div>
+                                <div class="col-sm-9">
+                                    <input [(ngModel)]="userDetails.ip" name="ipAddress" type="text"
+                                        class="form-control" placeholder="IP Address">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">Mac Address</p>
+                                </div>
+                                <div class="col-sm-9 mb-2">
+                                    <input [(ngModel)]="userDetails.macAddress" name="macAddress" type="text"
+                                        class="form-control" placeholder="Mac Address">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">User Agent</p>
+                                </div>
+                                <div class="col-sm-9">
+                                    <input [(ngModel)]="userDetails.userAgent" name="userAgent" type="text"
+                                        class="form-control" placeholder="User Agent">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">EIN</p>
+                                </div>
+                                <div class="col-sm-9">
+                                    <input [(ngModel)]="userDetails.ein" name="ein" type="text" class="form-control"
+                                        placeholder="EIN">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">SSN</p>
+                                </div>
+                                <div class="col-sm-9">
+                                    <input [(ngModel)]="userDetails.ssn" name="ssn" type="text" class="form-control"
+                                        placeholder="SSN">
+                                </div>
+                            </div>
+                            <hr>
+                            <!---bank details-->
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">Card Number</p>
+                                </div>
+                                <div class="col-sm-9 mb-2">
+                                    <input [(ngModel)]="userDetails.bank.cardNumber" name="cardNumber" type="text"
+                                        class="form-control" placeholder="Card Number">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">Card Type</p>
+                                </div>
+                                <div class="col-sm-9">
+                                    <input [(ngModel)]="userDetails.bank.cardType" name="cardType" type="text"
+                                        class="form-control" placeholder="Card Type">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">Currency</p>
+                                </div>
+                                <div class="col-sm-9 mb-2">
+                                    <input [(ngModel)]="userDetails.bank.currency" name="currency" type="text"
+                                        class="form-control" placeholder="Currency">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">Card Expire Date</p>
+                                </div>
+                                <div class="col-sm-9 mb-2">
+                                    <input [(ngModel)]="userDetails.bank.cardExpire" name="cardExpire" type="text"
+                                        class="form-control" placeholder="Card Expire Date">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">IBAN</p>
+                                </div>
+                                <div class="col-sm-9">
+                                    <input [(ngModel)]="userDetails.bank.iban" name="iban" type="text"
+                                        class="form-control" placeholder="IBAN">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---user personal details-->
+                <div class="col-lg-8">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 style="text-align:center;">Personal Details</h5>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">First Name</p>
+                                </div>
+                                <div class="col-sm-9">
+                                    <input [(ngModel)]="userDetails.firstName" name="firstName" type="text"
+                                        class="form-control" placeholder="First Name">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">Maiden Name</p>
+                                </div>
+                                <div class="col-sm-9">
+                                    <input [(ngModel)]="userDetails.maidenName" name="maidenName" type="text"
+                                        class="form-control" placeholder="Maiden Name">
+
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">Last Name</p>
+                                </div>
+                                <div class="col-sm-9">
+                                    <input [(ngModel)]="userDetails.lastName" name="lastName" type="text"
+                                        class="form-control" placeholder="Last Name">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">Address</p>
+                                </div>
+                                <div class="col-sm-9">
+                                    <input [(ngModel)]="userDetails.address.address" name="address" type="text"
+                                        class="form-control" placeholder="Address">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">City</p>
+                                </div>
+                                <div class="col-sm-9">
+                                    <input [(ngModel)]="userDetails.address.city" name="city" type="text"
+                                        class="form-control" placeholder="City">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">State</p>
+                                </div>
+                                <div class="col-sm-9">
+                                    <input [(ngModel)]="userDetails.address.state" name="state" type="text"
+                                        class="form-control" placeholder="State">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">Postal Code</p>
+                                </div>
+                                <div class="col-sm-9">
+                                    <input [(ngModel)]="userDetails.address.postalCode" name="postalCode" type="text"
+                                        class="form-control" placeholder="Postal Code">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">Coordinates lng</p>
+                                </div>
+                                <div class="col-sm-9">
+                                    <input [(ngModel)]="userDetails.address.coordinates.lng" name="lng" type="text"
+                                        class="form-control" placeholder="Coordinates lng">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">Coordinates lat</p>
+                                </div>
+                                <div class="col-sm-9">
+                                    <input [(ngModel)]="userDetails.address.coordinates.lat" name="lat" type="text"
+                                        class="form-control" placeholder="Coordinates lat">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">University</p>
+                                </div>
+                                <div class="col-sm-9">
+                                    <input [(ngModel)]="userDetails.university" name="university" type="text"
+                                        class="form-control" placeholder="University">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">Contact Number</p>
+                                </div>
+                                <div class="col-sm-9 mb-2">
+                                    <input [(ngModel)]="userDetails.phone" name="phoneNumber" type="number"
+                                        class="form-control" placeholder="Phone Number">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">Email ID</p>
+                                </div>
+                                <div class="col-sm-9 mb-2">
+                                    <input [(ngModel)]="userDetails.email" name="eMail" type="email"
+                                        class="form-control" placeholder="E-mail">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">Gender</p>
+                                </div>
+                                <div class="col-sm-9 mb-2">
+                                    <input [(ngModel)]="userDetails.gender" name="gender" type="text"
+                                        class="form-control" placeholder="Gender">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">Date of Birth</p>
+                                </div>
+                                <div class="col-sm-9 mb-2">
+                                    <input [(ngModel)]="userDetails.birthDate" name="birthDate" type="date"
+                                        class="form-control" placeholder="Date of Birth">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">Age</p>
+                                </div>
+                                <div class="col-sm-9">
+                                    <input [(ngModel)]="userDetails.age" name="age" type="number" class="form-control"
+                                        placeholder="Age">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">Blood Group</p>
+                                </div>
+                                <div class="col-sm-9 mb-2">
+                                    <input [(ngModel)]="userDetails.bloodGroup" name="bloodGroup" type="text"
+                                        class="form-control" placeholder="Blood Group">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">Height</p>
+                                </div>
+                                <div class="col-sm-9 mb-2">
+                                    <input [(ngModel)]="userDetails.height" name="height" type="text"
+                                        class="form-control" placeholder="Height">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">Weight</p>
+                                </div>
+                                <div class="col-sm-9 mb-2">
+                                    <input [(ngModel)]="userDetails.weight" name="Weight" type="text"
+                                        class="form-control" placeholder="Weight">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">Eye Color</p>
+                                </div>
+                                <div class="col-sm-9 mb-2">
+                                    <input [(ngModel)]="userDetails.eyeColor" name="eyeColor" type="text"
+                                        class="form-control" placeholder="Eye Color">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">Hair Color</p>
+                                </div>
+                                <div class="col-sm-9 mb-2">
+                                    <input [(ngModel)]="userDetails.hair.color" name="hairColor" type="text"
+                                        class="form-control" placeholder="Hair Color">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">Hair Type</p>
+                                </div>
+                                <div class="col-sm-9 mb-2">
+                                    <input [(ngModel)]="userDetails.hair.type" name="hairType" type="text"
+                                        class="form-control" placeholder="Hair Type">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!---user job details-->
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 style="text-align:center;">Professional Details</h5>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">Company Name </p>
+                                </div>
+                                <div class="col-sm-9">
+                                    <input [(ngModel)]="userDetails.company.name" name="companyName" type="text"
+                                        class="form-control" placeholder="Company Name">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">Job Title</p>
+                                </div>
+                                <div class="col-sm-9">
+                                    <input [(ngModel)]="userDetails.company.title" name="jobTitle" type="text"
+                                        class="form-control" placeholder="Job Title">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">Department</p>
+                                </div>
+                                <div class="col-sm-9">
+                                    <input [(ngModel)]="userDetails.company.department" name="department" type="text"
+                                        class="form-control" placeholder="Department">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">Address</p>
+                                </div>
+                                <div class="col-sm-9">
+                                    <input [(ngModel)]="userDetails.company.address.address" name="cAddress" type="text"
+                                        class="form-control" placeholder="Address">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">City</p>
+                                </div>
+                                <div class="col-sm-9 mb-2">
+                                    <input [(ngModel)]="userDetails.company.address.city" name="cCity" type="text"
+                                        class="form-control" placeholder="City">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">State</p>
+                                </div>
+                                <div class="col-sm-9 mb-2">
+                                    <input [(ngModel)]="userDetails.company.address.state" name="cState" type="text"
+                                        class="form-control" placeholder="State">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">Postal Code</p>
+                                </div>
+                                <div class="col-sm-9">
+                                    <input [(ngModel)]="userDetails.company.address.postalCode" name="cpostalCode"
+                                        type="text" class="form-control" placeholder="Postal Code">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">Coordinates lat</p>
+                                </div>
+                                <div class="col-sm-9 mb-2">
+                                    <input [(ngModel)]="userDetails.address.coordinates.lat" name="coordinatesLat"
+                                        type="text" class="form-control" placeholder="lat">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">Coordinates lng</p>
+                                </div>
+                                <div class="col-sm-9 mb-2">
+                                    <input [(ngModel)]="userDetails.address.coordinates.lng" name="coordinatesIng"
+                                        type="text" class="form-control" placeholder="lng">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <button type="button" class="btn btn-outline-secondary ms-1">Exit Page</button>
+                <button (click)="updateUser(udateUserform)" type="submit" class="btn btn-outline-secondary ms-1">Update User</button>
+            </div>
+        </form>
+    </div>
+</section>

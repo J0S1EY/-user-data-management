@@ -1,0 +1,98 @@
+.pb-4 {
+    padding-bottom: 1.5rem !important;
+}
+
+*,
+:after,
+:before {
+    box-sizing: border-box;
+}
+
+user agent stylesheet section {
+    display: block;
+}
+
+
+.pb-4 {
+    padding-bottom: 1.5rem !important;
+}
+
+*,
+:after,
+:before {
+    box-sizing: border-box;
+}
+
+user agent stylesheet section {
+    display: block;
+}
+
+.row {
+    --mdb-gutter-x: 1.5rem;
+    --mdb-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--mdb-gutter-y)*-1);
+    margin-right: calc(var(--mdb-gutter-x)*-0.5);
+    margin-left: calc(var(--mdb-gutter-x)*-0.5);
+}
+
+.biometrics {
+    margin-left: 30%;
+    margin-top: 15px;
+}
+
+.collapse {
+    margin: 2px;
+}
+
+
+.pb-4 {
+    padding-bottom: 1.5rem !important;
+}
+
+*,
+:after,
+:before {
+    box-sizing: border-box;
+}
+
+user agent stylesheet section {
+    display: block;
+}
+
+.col-sm-3 {
+    flex: 0 0 auto;
+    width: 30%;
+}
+.col-sm-9 {
+    flex: 0 0 auto;
+    width: 70%;
+}
+
+.row {
+    --mdb-gutter-x: 1.5rem;
+    --mdb-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--mdb-gutter-y)*-1);
+    margin-right: calc(var(--mdb-gutter-x)*-0.5);
+    margin-left: calc(var(--mdb-gutter-x)*-0.5);
+}
+
+body {
+    margin: 0;
+    font-family: var(--mdb-body-font-family);
+    font-size: var(--mdb-body-font-size);
+    font-weight: var(--mdb-body-font-weight);
+    line-height: var(--mdb-body-line-height);
+    color: var(--mdb-body-color);
+    text-align: var(--mdb-body-text-align);
+    background-color: var(--mdb-body-bg);
+
+}
+
+:root {
+    --mdb-font-roboto: "Roboto", sans-serif;
+    --mdb-bg-opacity: 1;
+}
